@@ -1,0 +1,18 @@
+extends base
+
+block content
+    div.container
+        - page.posts.each(function(article){
+            article.post
+                h1.title=article.title
+
+                include _partial/article_meta
+
+                +meta(article)
+
+                div.entry
+                    != article.excerpt
+
+                    a(href=config.root + article.path, class='more-link', title=article.title)
+                        | Read more
+        - })
