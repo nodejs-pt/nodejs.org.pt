@@ -1,6 +1,9 @@
 {
   "name": "hexo-site",
-  "version": "2.5.7",
+  "version": "2.7.1",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "hexo-renderer-jade": "^0.1.0",
+    "hexo-renderer-less": "^0.1.1"
+  }
 }
