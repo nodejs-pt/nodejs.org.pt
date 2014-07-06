@@ -1,0 +1,5 @@
+mixin meta(article)
+    time.pubdate(datetime=article.updated)=article.date.format(config.date_format)
+        span
+            |&nbspby&nbsp
+            =config.author
